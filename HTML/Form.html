@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>TicketMaster & Google Calendar</title>
+		<style>
+			body{background-color: skyblue; font-family: Verdana; color:white; padding: 30px;}
+			body, form
+			{
+				margin: 0 auto;
+				max-width:800px;
+				overflow-x:hidden;
+			}
+			fieldset{ display: flex; }
+			input#Event
+			{
+				flex-grow:100;
+				margin: 0 20px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<form action="search" method="get">
+			<fieldset>
+				<label for="Event">Keyword for the event:</label>
+				<input id="Event" name="Event" type="text" />
+				<input type="submit" value="Submit" />
+			</fieldset>
+		</form>
+	</body>
+</html>
